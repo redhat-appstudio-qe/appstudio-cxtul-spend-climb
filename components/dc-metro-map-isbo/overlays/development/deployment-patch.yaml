@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: dc-metro-map-isbo
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/happy-path-with-depl-tenant/appstudio/dc-metro-map-isbo@sha256:a03caefdd5ea73c2c8419e4bd7fe11fbf9f6069c4efbedcc0bc4a8698a10a7cc
+        name: my-nodejs
+        resources: {}
+status: {}
